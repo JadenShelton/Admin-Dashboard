@@ -76,6 +76,10 @@ p {
     font-size: 14px;
 }
 
+button {
+    cursor: pointer;
+}
+
 .header {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
@@ -83,6 +87,7 @@ p {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
+    padding: 20px;
 }
 
 #searchBar {
@@ -100,12 +105,36 @@ p {
     align-items: center;
 }
 
-.header button {
+.look {
+    border: none;
+    background-color: transparent;
+}
+
+.create {
     background-color: #009FFD;
     border: none;
     padding: 10px 20px;
     border-radius: 15px;
     font-size: 14px;
+}
+
+.create:hover {
+    color: #121212;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#pf1 {
+    background-color: orange;
+    height: 50px;
+    border-radius: 100%;
+    padding: 10px;
+    margin: 0px 20px;
 }
 
 .sidebar {
@@ -155,7 +184,7 @@ p {
     font-size: 20px;
 }
 
-.sideItem:hover {
+.sideItem:hover, .look:hover {
     color: #3CB961;
     filter: invert(61%) sepia(11%) saturate(2454%) hue-rotate(85deg) brightness(97%) contrast(88%);
 }
